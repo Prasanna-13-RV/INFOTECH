@@ -1,0 +1,475 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}
+
+.header {
+	min-height: 85vh;
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	color: #334756;
+	background-color: #f4f3f1;
+	text-align: left;
+	z-index: 0;
+}
+
+.hero {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 50vh;
+}
+
+.banner {
+	width: 100%;
+	height: 50vh;
+	background: url('https://www.citchennai.edu.in/wp-content/themes/cit/images/profile-bg.jpg')
+		center/cover;
+}
+
+.banner::after {
+	width: 100%;
+	height: 50vh;
+	content: '';
+	position: absolute;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title span {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    color: ghostwhite;
+    font-size: 40px;
+}
+
+.title {
+	padding-top: 150px;
+	padding-bottom: 100px;
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	color: #334756;
+	font-size: 4rem;
+	text-align: center;
+}
+
+.title-2 {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	color: #334756;
+	padding: 0px 0rem 40px 0rem;
+	/* margin-bottom: 0%; */
+	text-align: center;
+}
+/* .floater { */
+
+/* box-shadow: 8px 0px 21px 0px rgba(0, 0, 0,0.3) ; */
+/* top: 25%; */
+/* left: 5%; */
+/* width: 90%; */
+
+/* background-color:#FFDAB9 ; */
+/* 9 */
+
+/* }  */
+.content {
+	font-size: 20px;
+	line-height: 2rem;
+	width: 70%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+}
+/* .header::after {
+	
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 height: 100%;
+	 width: 100%;
+	 /* background-color: rgba(46, 115, 204, 0.3); */
+/*background: rgba(0, 0, 0, 0.4);/*rgba(29, 38, 113, 0.4) */
+
+/*z-index: 0;
+	
+   } */
+
+.title-3 {
+	font-family: 'Anton', sans-serif;
+
+	color: #005a8d;
+	font-size: 2.5rem;
+	padding: 50px 30px 120px 0rem;
+	text-align: center;
+}
+.title-4 {
+	color: #005a8d;
+	font-family: 'Anton', sans-serif;
+	font-size: 2.5rem;
+	margin: 50px 2rem 4rem 0rem;
+	text-align: center;
+}
+
+.xtra {
+	/* padding-top: 40px; */
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	z-index: 0;
+	min-height: 100vh;
+	background-color: #d8ebef;
+}
+
+.list {
+	/* font-family: 'Atkinson Hyperlegible', sans-serif; */
+
+	padding-top: 0px;
+	padding-bottom: 40px;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 2.3rem;
+}
+.list-2 {
+	/* font-family: 'Atkinson Hyperlegible', sans-serif; */
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.8rem;
+}
+
+.flex-1 {
+	font-family: 'Montserrat', sans-serif;
+
+	color: #334756;
+
+	width: 30vw;
+}
+.flex-2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #334756;
+	width: 30vw;
+}
+/* our team */
+
+.team-title {
+	position: relative;
+	top: 10%;
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	color: #5089c6;
+	font-size: 3rem;
+}
+
+.section-team {
+	background-color: #eeeeee;
+	height: 100vh;
+}
+.team-flex-main {
+	min-height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.grid1 {
+	grid-area: team1;
+}
+.grid2 {
+	grid-area: team2;
+}
+.grid3 {
+	grid-area: team3;
+}
+.grid4 {
+	grid-area: team4;
+}
+.grid5 {
+	grid-area: team5;
+}
+.grid6 {
+	grid-area: team6;
+}
+
+.team {
+	padding-top: 50px;
+	position: relative;
+	display: grid;
+	grid-template-areas:
+		'team1 team2 team3'
+		'team4 team5 team6';
+	grid-row-gap: 100px;
+	grid-column-gap: 80px;
+
+	align-items: center;
+	top: 30%;
+	margin-top: auto;
+	margin-bottom: auto;
+
+	justify-content: center;
+}
+
+.our-team {
+	background: #334756;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+
+	box-shadow: 5px 2px 25px 0px rgba(0, 0, 0, 0.2);
+	height: 230px;
+	width: 300px;
+	margin: 0px 25px;
+	padding: 50px;
+	box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.team-content {
+	color: #eeeeee;
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	margin: 20px 0 0rem 0;
+}
+.post {
+	padding-top: 10px;
+}
+.social {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #5089c6;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	transition: all 200ms ease-in-out;
+}
+.social li {
+	text-decoration: none;
+}
+
+.our-team:hover .social {
+	bottom: 0;
+}
+.our-team .social li {
+	display: inline-block;
+}
+.our-team .social li a {
+	display: block;
+	padding: 20px;
+	transition: all 200ms ease-in;
+	color: #334756;
+	text-decoration: none;
+}
+.our-team .social li a:hover {
+	color: rgb(255, 255, 255);
+}
+
+@media (max-height: 800px) {
+	.title-3 {
+		font-family: 'Anton', sans-serif;
+
+		color: #005a8d;
+		font-size: 1.6rem;
+		padding: 60px 30px 60px 0rem;
+		text-align: center;
+	}
+	.title-4 {
+		color: #005a8d;
+		font-family: 'Anton', sans-serif;
+		font-size: 1.6rem;
+		margin: 50px 2rem 2rem 0rem;
+		text-align: center;
+	}
+
+	.title {
+		padding: 0px;
+
+		font-family: 'Atkinson Hyperlegible', sans-serif;
+		color: #334756;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.title-2 {
+		font-family: 'Atkinson Hyperlegible', sans-serif;
+		color: #334756;
+		padding: 20px 0rem 40px 0rem;
+		/* margin-bottom: 0%; */
+		text-align: center;
+	}
+	.section-team {
+		position: relative;
+	}
+	.team {
+		padding-top: 60px;
+		position: relative;
+		display: grid;
+		grid-template-areas:
+			'team1 team2 team3'
+			'team4 team5 team6';
+		grid-row-gap: 40px;
+		grid-column-gap: 10px;
+
+		align-items: center;
+		top: 30%;
+		margin-top: 10%;
+		margin-bottom: auto;
+		justify-content: center;
+		justify-content: center;
+	}
+	.our-team {
+		background: #334756;
+		text-align: center;
+		overflow: hidden;
+		position: relative;
+		border-radius: 10px;
+
+		height: 200px;
+		width: 270px;
+		margin: 0px 25px;
+		padding: 30px;
+		box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+	}
+	.team-title {
+		position: absolute;
+		width: 100%;
+		top: -20px;
+		padding: 50px;
+	}
+
+	.list {
+		line-height: 2rem;
+	}
+	.list-2 {
+		line-height: 1.5rem;
+	}
+	.title {
+		padding-top: 40px;
+	}
+	.section-team {
+		padding-bottom: 650px;
+	}
+}
+@media screen and (max-height: 700px) {
+	.section-team {
+		padding-bottom: 700px;
+	}
+}
+@media (max-width: 1400px) {
+	.title {
+		padding-top: 100px;
+		font-family: 'Atkinson Hyperlegible', sans-serif;
+		color: #334756;
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	.content {
+		font-size: 16px;
+		line-height: 2rem;
+	}
+}
+@media (max-width: 1350px) {
+	.title-3 {
+		font-family: 'Anton', sans-serif;
+
+		color: #005a8d;
+		font-size: 1.6rem;
+		padding: 20px 30px 60px 0rem;
+		text-align: center;
+	}
+	.title-4 {
+		color: #005a8d;
+		font-family: 'Anton', sans-serif;
+		font-size: 1.6rem;
+		margin: 50px 2rem 2rem 0rem;
+		text-align: center;
+	}
+	.list {
+		line-height: 2rem;
+	}
+	.list-2 {
+		line-height: 1.5rem;
+	}
+	.content {
+		font-size: 17px;
+		line-height: 1.7rem;
+		width: 70%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (max-width: 1250px) {
+	.content {
+		font-size: 16px;
+		line-height: 1.6rem;
+		width: 70%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.title-3 {
+		font-family: 'Anton', sans-serif;
+
+		color: #005a8d;
+		font-size: 1.4rem;
+		padding: 60px 30px 60px 0rem;
+		text-align: center;
+	}
+	.title-4 {
+		color: #005a8d;
+		font-family: 'Anton', sans-serif;
+		font-size: 1.4rem;
+		margin: 50px 2rem 2.1rem 0rem;
+		text-align: center;
+	}
+	.list {
+		line-height: 2rem;
+
+		font-size: 14px;
+	}
+	.list-2 {
+		line-height: 1.4rem;
+		font-size: 14px;
+	}
+}
+@media (max-width: 1150px) {
+	.title {
+		padding-top: 100px;
+
+		font-family: 'Atkinson Hyperlegible', sans-serif;
+		color: #334756;
+		font-size: 2.5rem;
+		text-align: center;
+	}
+	.title-3 {
+		font-family: 'Anton', sans-serif;
+
+		color: #005a8d;
+		font-size: 1.4rem;
+		padding: 40px 30px 60px 0rem;
+		text-align: center;
+	}
+	.title-4 {
+		color: #005a8d;
+		font-family: 'Anton', sans-serif;
+		font-size: 1.4rem;
+		margin: 50px 2rem 2.1rem 0rem;
+		text-align: center;
+	}
+	.list {
+		line-height: 2rem;
+
+		font-size: 14px;
+	}
+	.list-2 {
+		line-height: 1.4rem;
+		font-size: 14px;
+	}
+}

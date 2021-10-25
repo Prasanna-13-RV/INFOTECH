@@ -1,0 +1,239 @@
+
+.artificialintelligent
+{
+    width: 100%;
+}
+
+.heading6
+{
+    position: absolute;
+    font-size: 40px;
+    color: rgb(6, 30, 250);
+    text-shadow: 2px 5px 5px grey;
+}
+
+
+.artificial
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contentai
+{
+    opacity: 0;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    color: ghostwhite;
+}
+
+.ai1.contentai1, .ai2.contentai1, .ai3.contentai1, .ai4.contentai1, .ai5.contentai1, .ai6.contentai1
+{
+    opacity: 1;
+}
+
+.fullai
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#C34A36,#FF8066);
+    align-items: flex-end;
+}
+
+.bargraph
+{
+    position: relative;
+    width: 75%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px;
+    margin-bottom: 50px;
+    background: transparent;
+}
+
+.ai
+{
+    width: 10%;
+    height: 5%;
+    background-color: rgb(216, 30, 154);
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 80px;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.ai:hover
+{
+    width: 1600px;
+    animation: none;
+    height: 70%;    
+    padding: 35px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.ai::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.datascience
+{
+    animation: clone1 2s infinite;
+    color: #eeee;
+}
+@keyframes clone1 {
+    0% {
+        height: 200px;
+    }
+    50% {
+        height: 50px;
+    }
+    100% {
+        height: 200px;
+    }
+}
+
+.datascience:hover
+{
+    background: url(https://tecnico.ulisboa.pt/files/2020/07/curso-de-formacao-data-science-an-immersive-overview-1140x641.jpg) center/cover;
+    background-position: contain;
+}
+
+.deeplearning
+{
+    animation: clone2 2s infinite;
+    color: #eeee;
+}
+@keyframes clone2 {
+    0% {
+        height: 300px;
+    }
+    50% {
+        height: 100px;
+    }
+    50% {
+        height: 50px;
+    }
+    50% {
+        height: 100px;
+    }
+    100% {
+        height: 300px;
+    }
+}
+.deeplearning:hover
+{
+    background: url(https://iot.eetimes.com/wp-content/uploads/sites/2/2018/01/AI_story4.jpg) center/cover;
+    background-position: contain;
+}
+
+.internetofthings
+{
+    animation: clone3 2s infinite;
+    color: #eeee;
+}
+@keyframes clone3 {
+    0% {
+        height: 100px;
+    }
+    50% {
+        height: 50px;
+    }
+    100% {
+        height: 100px;
+    }
+}
+
+.internetofthings:hover
+{
+    background: url(https://tridenstechnology.com/wp-content/uploads/2019/08/IoT-devices.jpg) center/cover;
+}
+
+
+.machinelearning
+{
+    animation: clone4 2s infinite;
+    color: #fff;
+}
+@keyframes clone4 {
+    0% {
+        height: 50px;
+    }
+    50% {
+        height: 200px;
+    }
+    100% {
+        height: 50px;
+    }
+}
+
+.machinelearning:hover
+{
+    background: url(https://www.simplilearn.com/ice9/free_resources_article_thumb/Deep-Learning-vs-Machine-Learning.jpg) center/cover;
+}
+
+
+.robotics
+{
+    animation: clone5 2s infinite;
+    color: black;
+}
+@keyframes clone5 {
+    0% {
+        height: 150px;
+    }
+    50% {
+        height: 10px;
+    }
+    100% {
+        height: 150px;
+    }
+}
+
+.robotics:hover
+{
+    background: url(https://www.edge-ai-vision.com/wp-content/uploads/2019/12/1200x675header_robotics2-300x168.jpg) center/cover;
+}
+
+
+.neuralnetworks
+{
+    animation: clone6 2s infinite;
+    color: #eeee;
+}
+@keyframes clone6 {
+    0% {
+        height: 300px;
+    }
+    50% {
+        height: 250px;
+    }
+    100% {
+        height: 300px;
+    }
+}
+
+.neuralnetworks:hover
+{
+    background: url(https://d2r55xnwy6nx47.cloudfront.net/uploads/2019/01/Neural_Networks_2880x1620.jpg) center/contain;
+}
+

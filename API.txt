@@ -1,0 +1,4 @@
+https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=699ed58aa00447958fc5f4c2fba8d705
+
+
+https://newsapi.org/v2/everything?q=apple&from=2021-08-14&to=2021-08-14&sortBy=popularity&apiKey=699ed58aa00447958fc5f4c2fba8d705

@@ -1,0 +1,969 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.title {
+	color: rgb(255, 255, 255);
+	font-size: 4rem;
+	z-index: 5;
+	font-family: 'Bebas Neue', cursive;
+	/* transform: translate(-50%,-50%); */
+}
+
+.nav-container {
+	background-color: #e7e3da !important;
+}
+
+.header {
+	background-color: #e7e3da;
+}
+
+.quote {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	margin-top: 7rem;
+	margin-bottom: 7rem;
+	color: rgb(0, 0, 0);
+	z-index: 6;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.875rem;
+	text-align: center;
+}
+.img-1 {
+	position: relative;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+	background: url('https://th.bing.com/th/id/R.c02e754b290f335ba288be95a9b1ba32?rik=aJxhyEvc%2bpHRDw&riu=http%3a%2f%2fwww.earnmydegree.com%2fsites%2fall%2ffiles%2fpublic%2fimages%2fshutterstock_123383902.jpg&ehk=K14C50OSRkUjQI6TZ%2bTjJfd%2b%2fOfXH7g%2bx6IR62Adi58%3d&risl=&pid=ImgRaw&r=0https://www.citchennai.edu.in/wp-content/themes/cit/images/profile-bg.jpg')
+		bottom/cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 60vh;
+}
+.img-1::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	/* background-color: rgba(46, 115, 204, 0.3); */
+	/* background: -webkit-linear-gradient(rgba(29, 38, 113, 0.4), rgba(195, 55, 100, 0.4)); */
+	background: rgba(0, 0, 0, 0.4);
+
+	z-index: 0;
+}
+.btn {
+	position: relative;
+	display: inline-flex;
+	width: 28vw;
+	height: 40px;
+	left: 36vw;
+	right: 35vw;
+	margin-top: 2.5cm;
+	margin-bottom: 1cm;
+}
+.color {
+	background-color: #ff6767;
+	color: white;
+}
+
+.scroll-content {
+	display: inline-block;
+	width: 50%;
+	cursor: pointer;
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+#card-1 {
+	border-radius: 20px 0px 0px 20px;
+	border: 0px solid;
+}
+#card-2 {
+	border-radius: 0px 0px 0px 0px;
+	border: 0px solid;
+	border-left: 1px solid #444444;
+	border-right: 1px solid #444444;
+}
+#card-3 {
+	border-radius: 0px 20px 20px 0px;
+	border: 0px solid;
+}
+.btn-1 {
+	border-bottom: 3px solid #f8361c;
+}
+.container-2 {
+	margin-top: 5rem;
+	position: relative;
+	width: 70%;
+	left: 15%;
+	right: 15%;
+	/* display: grid; */
+	/* grid-template-areas: 
+	"box1 box2 box3"
+	"box4 box5 box6"; */
+	justify-items: center;
+	/* align-items: center; */
+	grid-row-gap: 10vh;
+	margin-bottom: 7.25rem;
+	animation-name: cardanimation;
+	animation-duration: 700ms;
+}
+.container-grid1 {
+	display: grid;
+	grid-template-areas:
+		'box1 box2 box3'
+		'box4 box5 box6';
+}
+.container-grid2 {
+	display: grid;
+	grid-template-areas:
+		'box7 box8 box9'
+		'box10 box11 box12';
+}
+.container-grid3 {
+	display: grid;
+	grid-template-areas:
+		'box13 box14 box15'
+		'box16 box17 box18';
+}
+
+.border {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	color: #334756;
+	font-size: 1.8rem;
+	padding-bottom: 0px;
+}
+.faculty-details {
+	text-align: center;
+
+	padding-left: 0px;
+}
+.shadow {
+	box-shadow: 5px 2px 25px 0px rgba(0, 0, 0, 0.2);
+}
+.box1:hover .details {
+	height: 0;
+	color: white;
+}
+.box1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	grid-area: box1;
+	height: 320px;
+	width: 280px;
+	background-color: #b980f0;
+	transition: 300ms ease-in-out;
+}
+.box1:hover .details {
+	height: 0;
+	color: white;
+}
+.box2:hover .details {
+	height: 0;
+	color: white;
+}
+.box3:hover .details {
+	height: 0;
+	color: white;
+}
+.box4:hover .details {
+	height: 0;
+	color: white;
+}
+.box5:hover .details {
+	height: 0;
+	color: white;
+}
+.box6:hover .details {
+	height: 0;
+	color: white;
+}
+.box7:hover .details {
+	height: 0;
+	color: white;
+}
+.box8:hover .details {
+	height: 0;
+	color: white;
+}
+.box9:hover .details {
+	height: 0;
+	color: white;
+}
+.box10:hover .details {
+	height: 0;
+	color: white;
+}
+.box11:hover .details {
+	height: 0;
+	color: white;
+}
+.box12:hover .details {
+	height: 0;
+	color: white;
+}
+.box13:hover .details {
+	height: 0;
+	color: white;
+}
+.box14:hover .details {
+	height: 0;
+	color: white;
+}
+.box15:hover .details {
+	height: 0;
+	color: white;
+}
+.box16:hover .details {
+	height: 0;
+	color: white;
+}
+.box17:hover .details {
+	height: 0;
+	color: white;
+}
+.box18:hover .details {
+	height: 0;
+	color: white;
+}
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover,
+.box7:hover,
+.box8:hover,
+.box9:hover,
+.box10:hover,
+.box11:hover,
+.box12:hover,
+.box13:hover,
+.box14:hover,
+.box15:hover,
+.box16:hover,
+.box17:hover,
+.box18:hover {
+	transform: scale(1.05);
+	box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.3);
+}
+
+.box2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: absolute;
+	text-align: center;
+	grid-area: box2;
+	height: 320px;
+	min-width: 280px;
+	background-color: #fe9898;
+	transition: 300ms ease-in-out;
+}
+.box3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #ffaa4c;
+	grid-area: box3;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #8e2657;
+	grid-area: box4;
+	min-height: 300px;
+	min-width: 260px;
+	transition: 300ms ease-in-out;
+}
+.box5 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #00c1d4;
+	grid-area: box5;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box6 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #7fc8a9;
+	grid-area: box6;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box7 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #297f87;
+	grid-area: box7;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box8 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #96baff;
+	grid-area: box8;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box9 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #d54c4c;
+	grid-area: box9;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box10 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #f08fc0;
+	grid-area: box10;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box11 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #4c4c6d;
+	grid-area: box11;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box12 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #185adb;
+	grid-area: box12;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box13 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #865439;
+	grid-area: box13;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box14 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #39a2db;
+	grid-area: box14;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box15 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #c490e4;
+	grid-area: box15;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box16 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #01937c;
+	grid-area: box16;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box17 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #867ae9;
+	grid-area: box17;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.box18 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	position: relative;
+	text-align: center;
+	background-color: #f9b208;
+	grid-area: box18;
+	min-height: 320px;
+	min-width: 280px;
+
+	transition: 300ms ease-in-out;
+}
+.eg {
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+.img-container1 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2019/08/Murugn-Photo.jpg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container2 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png')
+		center/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container3 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2019/03/shaik-umama.jpg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container4 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2019/03/nebula-evanjulan-1.jpg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container5 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2020/10/Nisha.jpeg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container6 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2021/02/Dr.Ganesamoorthy.jpg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container7 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2019/08/Murugn-Photo.jpg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container8 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png')
+		center/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container9 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2019/03/shaik-umama.jpg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container10 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2021/03/Paun-Dass.jpeg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container11 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2020/01/Brindha.jpg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container12 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2019/03/vijilakshmi.jpg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container13 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2021/03/Paun-Dass.jpeg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container14 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png')
+		center/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container15 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2019/03/senthil-kumar-g.jpg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container16 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2021/08/Kamal.jpeg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container17 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.citchennai.edu.in/wp-content/uploads/2021/06/Dinesh.jpeg')
+		top/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+.img-container18 {
+	margin-top: 2rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url('https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png')
+		center/cover;
+	width: 130px;
+	min-height: 130px;
+	position: relative;
+	border-radius: 100%;
+	z-index: 1;
+}
+
+.details {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 220px;
+	background-color: white;
+	z-index: 0;
+	transition: all 400ms ease-out;
+	text-align: left;
+	/* padding-bottom: 1vh;  */
+
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.footer {
+	background-color: rgb(44, 43, 43);
+	height: 40vh;
+}
+/* switch */
+
+.container-2 {
+	display: none !important;
+}
+.show {
+	display: grid !important;
+}
+
+@keyframes cardanimation {
+	0% {
+		transform: translateY(60px);
+		opacity: 0.2;
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+@media (max-height: 800px) {
+	.container-2 {
+		margin-top: 5rem;
+		position: relative;
+		width: 80%;
+		left: 10%;
+		right: 10%;
+		/* display: grid; */
+		/* grid-template-areas: 
+	   "box1 box2 box3"
+	   "box4 box5 box6"; */
+		justify-items: center;
+		/* align-items: center; */
+		grid-row-gap: 10vh;
+		margin-bottom: 7.25rem;
+		animation-name: cardanimation;
+		animation-duration: 700ms;
+	}
+	.box1 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box1;
+		height: 300px;
+		width: 260px;
+		background-color: #b980f0;
+		transition: 300ms ease-in-out;
+	}
+	.box2 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		position: absolute;
+		text-align: center;
+		grid-area: box2;
+		height: 300px;
+		min-width: 260px;
+		background-color: #fe9898;
+		transition: 300ms ease-in-out;
+	}
+	.box3 {
+		font-size: 14px;
+		position: relative;
+		text-align: center;
+		background-color: #ffaa4c;
+		grid-area: box3;
+		min-height: 300px;
+		min-width: 260px;
+
+		transition: 300ms ease-in-out;
+	}
+	.box4 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box4;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #8e2657;
+		transition: 300ms ease-in-out;
+	}
+	.box5 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		position: relative;
+		text-align: center;
+		background-color: #00c1d4;
+		grid-area: box5;
+		min-height: 300px;
+		min-width: 260px;
+
+		transition: 300ms ease-in-out;
+	}
+	.box6 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 13px;
+		position: relative;
+		text-align: center;
+		background-color: #7fc8a9;
+		grid-area: box6;
+		min-height: 300px;
+		min-width: 260px;
+
+		transition: 300ms ease-in-out;
+	}
+	.eg {
+		margin-left: 5px;
+	}
+	.box7 {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		position: relative;
+		text-align: center;
+		grid-area: box7;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #297f87;
+		transition: 300ms ease-in-out;
+	}
+	.box8 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box8;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #96baff;
+		transition: 300ms ease-in-out;
+	}
+	.box9 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box9;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #d54c4c;
+		transition: 300ms ease-in-out;
+	}
+
+	.box10 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box10;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #f08fc0;
+		transition: 300ms ease-in-out;
+	}
+	.box11 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box11;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #4c4c6d;
+		transition: 300ms ease-in-out;
+	}
+
+	.box12 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box12;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #185adb;
+		transition: 300ms ease-in-out;
+	}
+	.box13 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box13;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #865439;
+		transition: 300ms ease-in-out;
+	}
+	.box14 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box14;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #39a2db;
+		transition: 300ms ease-in-out;
+	}
+	.box15 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box15;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #c490e4;
+		transition: 300ms ease-in-out;
+	}
+	.box16 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box16;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #01937c;
+		transition: 300ms ease-in-out;
+	}
+	.box17 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box17;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #867ae9;
+		transition: 300ms ease-in-out;
+	}
+	.box18 {
+		font-size: 14px;
+		text-align: center;
+		position: relative;
+		grid-area: box18;
+		min-height: 300px;
+		min-width: 260px;
+		background-color: #f9b208;
+		transition: 300ms ease-in-out;
+	}
+	.details {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		position: absolute;
+
+		width: 100%;
+		bottom: 0;
+		height: 200px;
+		background-color: white;
+		z-index: 0;
+		transition: all 400ms ease-out;
+		text-align: left;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.btn {
+		height: 30px;
+	}
+}
